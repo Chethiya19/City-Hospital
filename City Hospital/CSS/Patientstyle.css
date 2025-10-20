@@ -1,0 +1,28 @@
+.Patient-Portal {
+    padding-top:125px;
+    text-align: center;
+}
+.welcome {
+    text-align: center;
+    font-size: 24px;
+    background-color: #00ab9f;
+}
+.app-container{
+    text-align: center;
+    align-items: end;
+    flex-basis: 50%;
+}
+.content{
+    background: url(../Images/patient\ portal.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content img {
+    height: 300px;
+    width: 400px;
+}

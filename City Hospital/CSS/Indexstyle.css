@@ -1,0 +1,641 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+     :root {
+        --orange: #e89652;
+        --black: #000000;
+        --light-color: #666;
+        --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+        --border: .2rem solid rgba(0, 0, 0, .1);
+        --outline: .1rem solid rgba(0, 0, 0, .1);
+        --outline-hover: .2rem solid var(--black);
+    }
+    
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+
+    html {
+        font-size: 70%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
+    }
+    
+    body {
+        background: #fff;
+    }
+    
+    section {
+        padding: 2rem 9%;
+    }
+    .header img {
+        border-radius: 50px;
+    }
+    .heading {
+        text-align: center;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+        font-size: 3.5rem;
+        color: var(--black);
+    }
+    
+    .btn {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: .8rem 3rem;
+        font-size: 1.7rem;
+        border-radius: .5rem;
+        border: .2rem solid var(--black);
+        color: #fff;
+        cursor: pointer;
+        background: rgb(25, 198, 178);
+        border-color: #06958b;
+    }
+    
+    .btn:hover {
+        background: var(--orange);
+        color: #6bdcd2;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 9%;
+        background: #96d8d8;
+        box-shadow: var(--box-shadow);
+    }
+    
+    .header .navbar a {
+        font-size: 1.7rem;
+        margin: 0 1rem;
+        color: #4b6c72;
+    }
+    
+    .header .navbar a:hover {
+        color: var(--orange);
+    }
+    
+    .header .icons div {
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        border-radius: .5rem;
+        background: var(--black);
+        color: #fff;
+        font-size: 2rem;
+        margin-left: .3rem;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    .header .icons div:hover {
+        background: var(--orange);
+        color: #fff;
+    }
+    
+    .header .search-form {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 50rem;
+        height: 5rem;
+        background: #fff;
+        border-radius: .5rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        box-shadow: var(--box-shadow);
+    }
+    
+    .header .search-form.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+    
+    .header .search-form input {
+        height: 100%;
+        width: 100%;
+        background: none;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: var(--black);
+        padding: 0 1.5rem;
+    }
+    
+    .header .search-form label {
+        font-size: 2.2rem;
+        padding-right: 1.5rem;
+        color: var(--black);
+        cursor: pointer;
+    }
+    
+    .header .search-form label:hover {
+        color: var(--orange);
+    }
+    
+    .header .login-form {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 35rem;
+        box-shadow: var(--box-shadow);
+        padding: 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        text-align: center;
+    }
+    
+    .header .login-form.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+    
+    .header .login-form h3 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: var(--black);
+    }
+    
+    .header .login-form .box {
+        width: 100%;
+        margin: .7rem 0;
+        background: #eee;
+        border-radius: .5rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: var(--black);
+        text-transform: none;
+    }
+    
+    .header .login-form p {
+        font-size: 1.4rem;
+        padding: .5rem 0;
+        color: var(--light-color);
+    }
+    
+    .header .login-form p a {
+        color: var(--orange);
+        text-decoration: underline;
+    }
+    
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+    #emy {
+        text-align: center;
+        size: 13px;
+    }
+    p {
+        margin-bottom: 0px;
+        width: 100%; 
+    }
+
+    #z {
+        font-size: 15px;
+    }
+
+    a:hover,
+    a:focus,
+    input,
+    textarea {
+        text-decoration: none;
+        outline: none; 
+    }
+    .home {
+        background: url(../Images/cover/6.png);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: top center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    
+    .home .content {
+        width: 60rem;
+        text-align: center;
+    }
+    
+    .home .content h3 {
+        align-content: center;
+        color: var(--black);
+        font-size: 3rem;
+    }
+    
+    .home .content h3 span {
+        color: var(--orange);
+    }
+    
+    .home .content p {
+        color: var(--black);
+        font-size: 2rem;
+        font-style: bold;
+        padding: 1rem 0;
+        line-height: 1.8;
+    }
+
+    /* ===================================== logins CSS ================================== */
+
+    #A {
+        font-size: 30px;
+    }
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    .logins {
+    padding: 80px 50px;
+    background-color: #FAFAFA;
+    padding-bottom: 10px; }
+    @media screen and (max-width: 940px) {
+      .logins {
+        padding: 50px 10px; } }
+    @media screen and (max-width: 600px) {
+      .logins {
+        padding: 20px 10px; }
+        .logins .logins-cont {
+          padding: 0px; }
+        .logins .logins-smk {
+          padding: 0px; } }
+    .logins .logins-cont {
+      float: none;
+      margin: auto; 
+    }
+    .logins .logins-single {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px; }
+      .logins .blog-single .figure {
+        margin-bottom: 0px; }
+    .logins .logins-single-det {
+      margin: auto;
+      padding: 20px;
+      z-index: 99;
+      box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65), 0 2px 6px 0 rgba(206, 206, 238, 0.54);
+      width: 70%;
+      position: relative;
+      margin-top: -80px;
+      background-color: #FFF; }
+      .logins .logins-single-det .btn {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .logins .logins-single-det span {
+        font-size: 13px;
+        color: #b5316a; }
+      .logins .logins-single-det h6 {
+        font-size: 1.5rem; }
+      .logins .logins-single-det p {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1rem; }
+    .inner-title {
+        font-size: 50px;
+    }
+    .inner-title h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            font-family: "slab", Arial, Helvetica, sans-serif; 
+            }
+            .inner-title p {
+              width: 100%;
+              text-align: center; 
+            }
+            .btn {
+                margin-top: 1rem;
+                display: inline-block;
+                padding: .7rem 2rem;
+                font-size: 1.5rem;
+                border-radius: .5rem;
+                border: .2rem solid var(--black);
+                color: #060606;
+                cursor: pointer;
+                background: rgb(63, 147, 167);
+            }
+            
+            .btn:hover {
+                background: var(--light-color);
+                color: #f2f4fa;
+            }
+    
+/* ===================================== Key Features CSS ================================== */
+.key-features .kvxol {
+    padding: 0px; }
+  .key-features .single-key {
+    background-color: #FFF;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 30px; }
+    .key-features .single-key i {
+      background-color: #FFF;
+      padding: 20px;
+      font-size: 42px;
+      color: #00ab9f;
+      margin-bottom: 30px;
+      border-radius: 50px; }
+    .key-features .single-key p {
+      font-family: "mouse-300", Arial, Helvetica, sans-serif;
+      font-size: 15px; }
+  .key-features .ky-1 {
+    background-color: #03509e;
+    color: #FFF;
+    margin-bottom: 0px; }
+  .key-features .ky-2 {
+    background-color: #0085bc;
+    color: #FFF;
+    margin-bottom: 0px; }
+  
+  .department {
+    padding: 80px 50px;
+    background-color: #FFF; }
+    @media screen and (max-width: 940px) {
+      .department {
+        padding: 50px 10px; } }
+
+    /* ===================================== Gallery Style  ================================== */
+
+    .gallery-filter {
+    width: 100%;
+    text-align: center; 
+    padding-left: 20%;
+    padding-right: 20%;
+}
+    .gallery-filter .btn {
+        background-color: #99d5a2; 
+        font-weight: 100;
+    }
+    
+  .gallery {
+
+    text-align: center;
+    background-color: #FAFAFA; }
+    @media screen and (max-width: 940px) {
+      .gallery {
+        padding: 50px 10px; 
+        } }
+  
+  .gallery-title {
+    font-size: 36px;
+    color: #00ab9f;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px; }
+  
+  .gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #00ab9f; }
+  
+  .filter-button {
+    font-size: 18px;
+    border: 1px solid #00ab9f;
+    border-radius: 5px;
+    text-align: center;
+    color: #00ab9f;
+    margin-bottom: 30px; 
+}
+  
+  .filter-button:hover {
+    font-size: 18px;
+    border: 1px solid #00ab9f;
+    border-radius: 5px;
+    text-align: center;
+    color: #bee0de;
+    background-color: #00ab9f; }
+  
+  .btn-default:active .filter-button:active {
+    background-color: #00ab9f;
+    color: #bee0de; }
+  
+  .port-image {
+    width: 50%; }
+
+    .Y {
+        padding-top: 100px;
+    }
+    .a {
+        height: 280px;
+        width: 280px;
+    }
+      /* ===================================== Gallery Style  ================================== */
+  .gallery-filter {
+    width: 100%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%; }
+    .gallery-filter .btn {
+      background-color: #FFF; }
+  
+  .gallery {
+    padding-right: 90px;
+    padding-bottom: 90px;
+    background-color: #FAFAFA; }
+    @media screen and (max-width: 940px) {
+      .gallery {
+        padding: 50px 10px; } }
+  
+  .gallery-title {
+    font-size: 36px;
+    color: #00ab9f;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px; }
+  
+  .gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #00ab9f; }
+  
+  .filter-button {
+    font-size: 18px;
+    border: 1px solid #00ab9f;
+    border-radius: 5px;
+    text-align: center;
+    color: #00ab9f;
+    margin-bottom: 30px; }
+  
+  .filter-button:hover {
+    font-size: 18px;
+    border: 1px solid #00ab9f;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #00ab9f; }
+  
+  .btn-default:active .filter-button:active {
+    background-color: #00ab9f;
+    color: white; }
+  
+  .port-image {
+    width: 100%; }
+  
+    
+    /*====================================== Branches ====================================*/
+
+    .branches {
+        position: relative;
+        background-color: #FAFAFA;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .branches p {
+        padding-top: 20px;
+        position: absolute;
+        font-weight: bold;
+        text-align:center ;
+        color: #000000;
+        font-size: 20px; 
+        text-transform: capitalize;
+
+    }
+    #h1 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: xx-large;
+        padding-bottom: 20px;
+    }
+
+
+    /*====================================== About Us Style ====================================*/
+
+    .about-us {
+        padding-top: 50px;
+    }
+    .about-us .image-bg {
+        background: url(../Images/why.jpg);
+        width: 65%;
+        height: 448px;
+        background-size: contain;
+        padding: 0px;
+    }
+    .about-us .description {
+        align-items: end;
+        padding-left: 80px;
+        padding-top: 10px;
+        width: 70%;
+        background-color: #FFF; 
+        font-size: 15px;
+    }
+    .box {
+        padding-top: 10px;
+    }
+  
+  
+
+    /* ===================================== Footer  ================================== */
+
+    .footer {
+        background-color: #444;
+        padding: 80px 50px;
+        padding: 30px;
+        padding-bottom: 0px;
+    }
+    .footer img {
+        border-radius: 50%;
+    }
+    
+    .footer .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .footer .box-container .box h3 {
+        font-size: 2.5rem;
+        color: #fff;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box h3 i {
+        color: var(--orange);
+    }
+    
+    .footer .box-container .box .links {
+        display: block;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box .links i {
+        color: var(--orange);
+        padding-right: .5rem;
+    }
+    
+    .footer .box-container .box .links:hover i {
+        padding-right: 2rem;
+    }
+    
+    .footer .box-container .box p {
+        line-height: 1.8;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 1rem 0;
+    }
+    
+    .footer .box-container .box .share a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        border-radius: .5rem;
+        font-size: 2rem;
+        color: #fff;
+        margin-right: .2rem;
+        background: rgb(25, 198, 178);
+        text-align: center;
+    }
+    
+    .footer .box-container .box .share a:hover {
+        background: var(--orange);
+        color: #fff;
+    }
+    /* .footer .box-container .box .payment-img {
+        margin-top: 2rem;
+        height: 3rem;
+        display: block;
+    } */
+    
+    .footer .credit {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        color: white;
+        border-top: var(--border);
+    }
+    
+    .footer .credit span {
+        color: var(--orange);
+    }
+    #foot-img {
+        align-content: center;
+        margin-top: 100px;
+        margin-left: 110px;
+    }
+
+
+
+    

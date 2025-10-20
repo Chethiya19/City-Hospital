@@ -1,0 +1,38 @@
+.Admin-Portal {
+    padding-top:125px;
+    text-align: center;
+}
+.welcome {
+    text-align: center;
+    font-size: 24px;
+    background-color: #00ab9f;
+}
+.fileupload{
+        background-color: #4aa9a2;
+        border: 2px solid black;
+        width: 500px;
+        margin-left: 450px;
+        margin-top: 50px;
+        padding: 40px;
+        margin-bottom: 100px;
+      }
+      .form{
+        margin-left: 90px;
+      }
+      .fileupload label{
+        font-size: 25px;
+        font-weight: bold;
+      }
+      #pdf{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      #upload{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 100px;
+        background-color: yellowgreen;
+        border-color: black;
+      }
+
